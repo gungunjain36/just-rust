@@ -1,17 +1,22 @@
-use std::io;
+use std::io;    // Import the standard input/output library
 
 
 fn main() {
-    Let mut counter = 0;
+    let mut counter = 0;   // Initialize a mutable counter variable
 
-    Loop {
+    loop {                                                                          // Start an infinite loop to continuously prompt the user
         println!("Current counter value is: {}", counter);
         println!("Enter a command (increment, decrement, reset, exit):");
-        Let mut input = String::new();
+        // Prompt the user for input
+        let mut input = String::new();
+        // Read user input from the standard input
         io::stdin().read_line(&mut input).expect("Failed to read line");
-        Let command = input.trim();
+        // Trim whitespace and convert input to lowercase for easier command matching
+        let command = input.trim().to_lowercase();
 
-        match command{
+        // Match the command against known actions
+        // Increment, decrement, reset, or exit the program
+        match command.as_str() {
             "increment" => {
                 counter += 1;
                 println!("Counter incremented.");
