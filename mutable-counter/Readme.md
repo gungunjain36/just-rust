@@ -36,6 +36,8 @@ Type 'i' to increment, 'r' to reset, or 'q' to quit: q
 Goodbye!
 ```
 
-## License
+## Concepts
 
-This project is licensed under the MIT License.
+- loop : A loop keyword to indicate an infinite loop.
+        - The break statement can be used to exit a loop at anytime, whereas the continue statement can be used to skip the rest of the iteration and start a new one.
+- match : Rust provides pattern matching via the match keyword, which can be used like a C switch.
