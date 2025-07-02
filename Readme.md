@@ -7,13 +7,23 @@ Just-Rust is a collection of Rust projects designed to help you learn and practi
 Each project is a standalone Rust crate with its own `Cargo.toml` file. You can run any project individually by navigating to its folder.
 
 ### 1. Hello World
-A simple program that prints "Hello, world!" to the console.
+A simple program that takes name input and prints greetings to the console.
 
 **Run:**
 ```sh
 cd hello_world
 cargo run
 ```
+### 2. Mutable Counter
+A program that demonstrates how to use mutable variables in Rust by implementing a simple counter. The counter can be incremented and its value printed to the console.
+
+**Run:**
+```sh
+cd mutable_counter
+cargo run
+```
+
+
 
 ## Prerequisites
 
